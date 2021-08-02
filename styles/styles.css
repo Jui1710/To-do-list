@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    /* border: 2px solid red; */
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 10% auto 10%;
+}
+
+
+h1{
+    font-size: 3rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.add-task{
+    margin: 0px auto;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.add-task input{
+    font-size: 2rem;
+    margin: 10px;
+}
+.add-task i{
+    font-size: 2rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.add-task i:hover{
+    transform: scale(1.2);
+}
+
+#root{
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.display-task{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.display-task>input{
+    font-size: 2rem;
+    width: 50%;
+}
+
+.display-task button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 5px;
+    background: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.display-task button:hover{
+    transform: scale(1.5);
+}
+#add{
+    font-size: 1.7rem;
+}
+#reset{
+    font-size: 1.5rem;
+}
+
+.display-task input[type='checkbox']{
+margin-top: 14px;
+margin-right: 10px;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid black;
+}
+
+input[type="checkbox"]:checked{
+    background: none;
+    border: none;
+}
+
+
+input[type="checkbox"]:hover{
+    filter: brightness(90%);
+}
+
+input[type="checkbox"]:after{
+    content:'';
+    position: relative;
+    left: 40%;
+    width: 40%;
+    height: 100%;
+    border: solid black;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(50deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+
+@media (max-width:468px) {
+    h1{
+        font-size: 2rem;
+    }
+    .display-task input[type='text']{
+        font-size: 1.2rem;
+    }
+    .add-task{
+        margin: 0px auto;
+    }
+    .add-task input{
+        font-size: 1.5rem;
+        width: 65%;
+    }
+    #add{
+        font-size: 1.2rem;
+    }
+    #reset{
+        font-size: 1rem;
+    }
+
+    .display-task button{
+    font-size: 1rem;
+}
+}

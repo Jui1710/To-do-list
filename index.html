@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" href="./assests/to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+</head>
+
+<body id="body">
+    <h1>ToDo List</h1>
+    <div id="root"></div>
+    <div class="add-task">
+        <input type="text" placeholder="Write new task..." id="task-description">
+        <i class="fas fa-plus" id="add"></i>
+        <i class="fas fa-undo" id="reset"></i>
+    </div>
+
+    <!-- <div class="display-task">
+        <input type="checkbox" name="isCompleted" class="isCompleted">
+        <input type="text" placeholder="Some description">
+        <button><i class="far fa-edit"></i></button>
+        <button><i class="fas fa-trash"></i></button>
+
+    </div> -->
+</body>
+
+</html>
